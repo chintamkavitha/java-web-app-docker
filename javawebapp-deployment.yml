@@ -12,7 +12,7 @@ spec:
         name: javawebapp
     spec:
       containers:
-      - image: chintamkavitha/java-web-app:21
+      - image: chintamkavitha/java-web-app:VERSION
         name: javawebapp
         ports:
         - name: javawebapp
