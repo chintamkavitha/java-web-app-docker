@@ -9,12 +9,13 @@ spec:
   replicas: 1
   template:
     metadata:
-      labels:
-        name: javawebapp
+     name: javawebpod
+     labels:
+        app: javawebapp
         version: "BUILD_NUMBER"
     spec:
       containers:
-      - image: chintamkavitha/java-web-app:${version}
+      - image: chintamkavitha/java-web-app
         name: javawebapp
         ports:
         - name: javawebapp
@@ -26,11 +27,11 @@ kind: Service
 metadata:
   labels:
     name: javawebapp
-  name: javawebapp
+  
 spec:
   type: NodePort
   ports:
     - port: 8080
       targetPort: 8080
   selector:
-    name: javawebapp
+    app: javawebapp
