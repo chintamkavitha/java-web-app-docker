@@ -14,7 +14,7 @@ spec:
         version: "BUILD_NUMBER"
     spec:
       containers:
-      - image: chintamkavitha/java-web-app:version
+      - image: chintamkavitha/java-web-app:${version}
         name: javawebapp
         ports:
         - name: javawebapp
