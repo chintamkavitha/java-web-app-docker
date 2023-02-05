@@ -8,9 +8,8 @@ spec:
   replicas: 1
   template:
     metadata:
-      name: javawebpod
       labels:
-        app: javawebapp
+        name: javawebapp
     spec:
       containers:
       - image: chintamkavitha/java-web-app:VERSION
@@ -32,4 +31,4 @@ spec:
     - port: 8080
       targetPort: 8080
   selector:
-    app: javawebapp
+    name: javawebapp
