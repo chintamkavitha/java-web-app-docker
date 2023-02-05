@@ -9,11 +9,10 @@ spec:
   replicas: 1
   template:
     metadata:
-     name: javawebpod
+    
      labels:
         app: javawebapp
-     env:
-       version: "BUILD_NUMBER"
+        version: "BUILD_NUMBER"
     spec:
       containers:
       - image: chintamkavitha/java-web-app:${version}
