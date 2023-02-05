@@ -11,7 +11,7 @@ spec:
     metadata:
       labels:
         name: javawebapp
-      version: "BUILD_NUMBER"
+        version: "BUILD_NUMBER"
     spec:
       containers:
       - image: chintamkavitha/java-web-app:version
