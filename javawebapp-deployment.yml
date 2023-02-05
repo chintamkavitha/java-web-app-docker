@@ -11,9 +11,10 @@ spec:
     metadata:
       labels:
         name: javawebapp
+      version: "BUILD_NUMBER"
     spec:
       containers:
-      - image: chintamkavitha/java-web-app
+      - image: chintamkavitha/java-web-app:version
         name: javawebapp
         ports:
         - name: javawebapp
