@@ -12,10 +12,11 @@ spec:
      name: javawebpod
      labels:
         app: javawebapp
-        version: "BUILD_NUMBER"
+     env:
+       version: "BUILD_NUMBER"
     spec:
       containers:
-      - image: chintamkavitha/java-web-app
+      - image: chintamkavitha/java-web-app:${version}
         name: javawebapp
         ports:
         - name: javawebapp
